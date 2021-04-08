@@ -1,0 +1,195 @@
+[
+{
+"1:": "A developer is trying to decide whether to use a master-detail or lookup relationship between two objects. Which of the following considerations are true?",
+"Answers": {
+"B.": "A custom object cannot be on the master side of a relationship with a standard object.",
+"C.": "Custom objects on the detail side of a master-detail relationship cannot have queues.",
+"D.": "In a master-detail relationship, if the master record is deleted, the detail records will all be deleted.",
+"X-->E.": "Child records in master-detail relationships on custom objects cannot be reparented."
+}
+},
+{
+"2:": "There is a requirement to track which Health Care Providers are related to Hospitals. Hospitals and Health Care Providers are custom object records. A Health Care Provider should be related to multiple Hospitals and a Hospital should be related to multiple Health Care Providers. How can this relationship be created?",
+"Answers": {
+"D.": "Create an additional object to connect the other 2 objects and create 2 master-detail relationship fields on that object"
+}
+},
+{
+"3:": "Which of the following are capabilities of schema builder?",
+"Answers": {
+"A.": "Deleting a custom object",
+"B.": "Creating a custom object",
+"E.": "Creating lookup and master-detail relationships"
+}
+},
+{
+"4:": "What is true regarding the user interface for different relationship types?",
+"Answers": {
+"A.": "When a lookup relationship to (parent) object B is defined on (child) object A, data from object A can appear as a related list on page layouts of object B.",
+"C.": "When a many-to-many relationship is defined between objects A and B using a junction object, data from the junction object can appear in a related list on the page layouts of objects A and B.",
+"X-->D.": "When a master-detail relationship is defined, data from the master or detail object can appear as a custom related list on page layouts for the other object."
+}
+},
+{
+"5:": "What is true regarding record access in a master-detail relationship?",
+"Answers": {
+"C.": "The detail object inherits the sharing and security settings of the master record",
+"D.": "The owner of a master record is automatically used to set the owner of its associated detail records"
+}
+},
+{
+"6:": "The Salesforce Administrator is building an application and needs to create a master detail relationship between the standard object Account and a custom object. What is true regarding the relationship?",
+"Answers": {
+"C.": "The object on the detail side will inherit the security and sharing settings of the master object",
+"D.": "The standard object is always the master"
+}
+},
+{
+"7:": "What is true about the DML statement and the SupplierPartNumber__c field, which is configured as an External ID, below?",
+"Answers": {
+"A.": "The SupplierPartNumber__c field may or may not be configured as a unique field.",
+"C.": "The SupplierPartNumber__c field may be used to reference an ID from an external system.",
+"X-->D.": "The DML statement skips the operation if the SupplierPartNumber__c value already exists.",
+"E.": "The DML statement will either insert or update records."
+}
+},
+{
+"8:": "A developer created a custom object named Project. Data from associated projects needs to be summarized on each Account. All associated projects should be deleted when an Account is deleted. How can the developer achieve this?",
+"Answers": {
+"B.": "Create a Master-Detail relationship field on Project."
+}
+},
+{
+"9:": "At Global Conferences, the custom objects Conference and Speaker are in a many-to-many relationship via a junction object called Conference Speaker. A request has been made to the Salesforce Administrator for a solution after a group of users who only have 'read' access to the Conference and Speaker objects were unable to create or modify Conference Speaker records. How can the Salesforce Administrator solve this issue most efficiently?",
+"Answers": {
+"A.": "Edit the sharing settings on the master-detail relationships on the junction object to 'Read Only'",
+"X-->D.": "Change the org-wide sharing settings of the junction object to 'Public Read/Write'"
+}
+},
+{
+"10:": "What are considerations for deciding between using Data Loader and the Data Import Wizard for loading data into a development environment?",
+"Answers": {
+"A.": "The number of records to be loaded",
+"B.": "If the data needs to be loaded multiple times",
+"D.": "If the object is supported by the data import tool"
+}
+},
+{
+"11:": "A company has a requirement to track the vehicles assigned to work orders. Vehicles can exist without Work Orders and have a record owner. What kind of relationship should be created between Work Orders and Vehicles?",
+"Answers": {
+"D.": "Lookup"
+}
+},
+{
+"12:": "A Salesforce Administrator is replacing a spreadsheet that tracks company resources and the employees that are assigned to the resources with a Salesforce App. Resources can be of different types, such as phones, vehicles, and equipment. Each employee can be assigned multiple resources. Employee and resource records exist independently. A resource can only be assigned to one employee and is not shared. After creating a custom object for Employee and Resource, what type of relationship would be appropriate to create?",
+"Answers": {
+"A.": "Lookup relationship"
+}
+},
+{
+"13:": "Sam has completed a solution design and is ready to create the data model for a new application in Salesforce. There are a number of custom objects, each with a number of custom fields and relationships between the custom objects. What would you suggest to complete the task most efficiently?",
+"Answers": {
+"A.": "Use the Schema Builder to create custom objects, fields, and relationships",
+"X-->B.": "Use the Schema Builder to create custom objects and fields, and then create relationships in Setup via Create->Objects"
+}
+},
+{
+"14:": "A developer is creating a Training application to track training courses and the enrollment of the candidates. Each candidate can enroll in multiple training courses at a time. How can the developer achieve this?",
+"Answers": {
+"B.": "Create a junction object to relate many candidates to many training courses through master-detail relationships."
+}
+},
+{
+"15:": "Global Insurance has custom objects to represent policies and claims. A policy can have zero or many claims. A claim is always related to a policy. Claims are first assigned to a queue and then later assigned to different members of the claims team. What type of relationship would be used to relate the policy and claim objects?",
+"Answers": {
+"B.": "Lookup relationship"
+}
+},
+{
+"16:": "A developer needs to do a quick one-time load of 100 custom object records into a development environment. The data is in a csv file and each record contains 5 fields. Which tool would you recommend to use to load the data?",
+"Answers": {
+"D.": "Data Import Wizard"
+}
+},
+{
+"17:": "A developer created a lookup field on a custom object \"Feedback\". The lookup references the standard Account object. Which statement is correct?",
+"Answers": {
+"D.": "If an account record is deleted, related feedback records will not be deleted."
+}
+},
+{
+"18:": "Project managers would like to be able to record the total amount of hours each team member works on projects. A team member can be related to multiple projects and each project can have multiple team members. How can the developer achieve this?",
+"Answers": {
+"D.": "Create master-detail relationships from a junction object 'Project Team Member', one to the Project object and one to the Team Member object"
+}
+},
+{
+"19:": "A developer would like to relate an external data object (Social Media Posts) to the contacts object in Salesforce to track every post the contact has made in the external platform. How can the developer achieve this?",
+"Answers": {
+"A.": "Create an indirect lookup relationship using a custom field with External ID and Unique attributes"
+}
+},
+{
+"20:": "A developer needs to create a custom object related to Account. How can the developer ensure that all related records are also visible to users that have access to the parent Account?",
+"Answers": {
+"C.": "Create a Master-Detail relationship field on the Custom Object."
+}
+},
+{
+"21:": "Sam is required to define a custom field on the User object that would record a user's secondary manager in a matrix organizational structure. Which relationship type should be used to achieve this?",
+"Answers": {
+"B.": "Hierarchical"
+}
+},
+{
+"22:": "A Salesforce Administrator is considering whether to use a lookup or master-detail relationship. Which of the following are capabilities of a lookup relationship but not a master-detail relationship?",
+"Answers": {
+"A.": "The lookup field does not need to be a required field on the page layout.",
+"C.": "The related record can have a different owner than the parent record."
+}
+},
+{
+"23:": "You have a requirement to associate a project manager to a project record. Project managers are defined as users in the application. What type of relationship would be most appropriate?",
+"Answers": {
+"C.": "Lookup Relationship"
+}
+},
+{
+"24:": "A developer needs to update existing Account records using an import file. How can the records be matched so that the correct record is updated?",
+"Answers": {
+"A.": "Match an external id field defined on the account object to a column in the import file",
+"D.": "Match the record id field to a column in the import file"
+}
+},
+{
+"25:": "Which of the following provides a dynamic environment for viewing and modifying objects and relationships?",
+"Answers": {
+"A.": "Schema Builder",
+"X-->B.": "Flows"
+}
+},
+{
+"26:": "What are the implications of using an External ID to relate child records to a parent record?",
+"Answers": {
+"B.": "The child record must have a relationship field that associates it to the parent record",
+"X-->C.": "An External ID field must also be defined at the child record to establish the relationship",
+"D.": "A parent record reference is created and added to the relationship field of the child record"
+}
+},
+{
+"27:": "What type of relationship is appropriate when an external object is acting as a parent to a standard or custom child object and records are matched by an external ID?",
+"Answers": {
+"X-->A.": "Parent External Lookup",
+"C.": "External Lookup"
+}
+},
+{
+"28:": "Universal Containers has tried the Schema Builder but has found that it has long loading times and objects are difficult to find because there are too many objects and relationships displayed. What features would you suggest to help with this issue?",
+"Answers": {
+"A.": "If the 'Hide Relationships' option is selected, performance is improved",
+"B.": "The map can be used to navigate to objects of interest",
+"C.": "The filter can be used to only display objects of interest",
+"X-->E.": "Activate lightweight mode in the Schema Builder settings"
+}
+}
+]

@@ -1,0 +1,1657 @@
+[
+{
+"1:": "What is the discretionary clause that can be added to a SOSL query to specify the information to be returned in the text search result?",
+"Answers": {
+"A.": "RETURNING",
+"X-->B.": "LIMIT n"
+}
+},
+{
+"1:": "Which of the following are valid use cases of Apex code?",
+"Answers": {
+"B.": "Server-side calls from custom Lightning components",
+"C.": "Triggers",
+"D.": "Web Service"
+}
+},
+{
+"1:": "W",
+"Answers": {
+"B.": "Constructor"
+}
+},
+{
+"1:": "A PageReference is a reference to an instantiation of a page. Which of the following are valid means of instantiating a PageReference?",
+"Answers": {
+"A.": "PageReference pageRef = new PageReference('URL');",
+"X-->C.": "PageReference.page('URL')",
+"D.": "Page.existingPageName"
+}
+},
+{
+"1:": "An administrator needs to get records with locations saved in geolocation or address fields as individual latitude and longitude values.",
+"Answers": {
+"A.": "SELECT\u00a0Id, Name, Location__latitude__s, Location__longitude__s FROM CustomObject__c",
+"X-->C.": "SELECT\u00a0Id, Name, Location__r.latitude__c, Location__r.longitude__c FROM CustomObject__c"
+}
+},
+{
+"1:": "Which data type is appropriate for a numerical value of 726.234 stored in the variable totalCost?",
+"Answers": {
+"B.": "Decimal totalCost;"
+}
+},
+{
+"1:": "A recruitment application is being developed to manage job vacancies and job applications. The business wants to display the number of applications for each job vacancy, and the number should be automatically updated when applications are created or deleted. Also, the parent job vacancy record's security settings should not be inherited by the job application record. Which of the following options are the most suitable for this requirement?",
+"Answers": {
+"C.": "Use Flow Builder to count the job applications and update the field on the parent record.",
+"D.": "Create a lookup relationship between the two objects."
+}
+},
+{
+"1:": "In Apex, an expression is a construct made up of variables, operators, and method invocations that evaluates to a single value. Which of the following are valid Apex expressions?",
+"Answers": {
+"B.": "myClass.myMethod()",
+"C.": "new List<Opportunity>()",
+"D.": "3 + 4"
+}
+},
+{
+"1:": "How can a developer check if the current user is able to delete the current object?",
+"Answers": {
+"C.": "Use the isDeletable() method of the DescribeSObjectResult Class"
+}
+},
+{
+"1:": "What will be the output if the code below is executed when the value of testRawScore variable is 75?",
+"Answers": {
+"A.": "Value of gradeEqual = D",
+"X-->D.": "Value of gradeEqual = C"
+}
+},
+{
+"1:": "A developer requires a variable numberOfStudents with a constant value of 25 that is accessible only within the Apex class in which it is defined. Which of the following is the best variable declaration?",
+"Answers": {
+"B.": "private static final Integer numberOfStudents = 25;"
+}
+},
+{
+"1:": "What will be the result if the code below is executed when the variable testRawScore is 75?",
+"Answers": {
+"D.": "Grade C"
+}
+},
+{
+"1:": "Which of the following statements are true when defining Apex classes?",
+"Answers": {
+"B.": "It is optional to specify an access modifier in declaring inner class.",
+"D.": "It is required to specify an access modifier in declaring top-level class."
+}
+},
+{
+"1:": "Which of the following statements about delete and undelete DML operations are true?",
+"Answers": {
+"A.": "In a master-detail relationship, child records are deleted when the parent record is deleted.",
+"B.": "All custom lookup relationships that have not been replaced can be restored.",
+"X-->D.": "The undelete operation does not restore the record associations for parent cases.",
+"E.": "Parent and child account records are supported by the undelete operation."
+}
+},
+{
+"1:": "How would a developer write a query to return the number of leads for each lead source?",
+"Answers": {
+"A.": "SELECT LeadSource, COUNT(Name) FROM Lead GROUP BY LeadSource"
+}
+},
+{
+"1:": "What are reasons for using a static method or variable?",
+"Answers": {
+"A.": "To use a method or variable without instantiating its class",
+"B.": "To create a utility method in a class",
+"D.": "To store information that is shared across instances of a class",
+"X-->E.": "To persist a variable value beyond the context of a single transaction"
+}
+},
+{
+"1:": "To fulfill a business requirement, a formula field of a child object has been used in a roll-up summary field of a Master object. Will the roll-up summary field function correctly?",
+"Answers": {
+"B.": "Yes, if the formula field is not referring to another field in a different object",
+"X-->D.": "No, using formula fields in a roll-up summary is not supported."
+}
+},
+{
+"1:": "A company would like to send record information to a legacy system when a criteria is met. A developer can accomplish this requirement by using:",
+"Answers": {
+"B.": "Workflow Rule with Outbound Message"
+}
+},
+{
+"1:": "Given the following options, what are the valid ways to declare a collection variable?",
+"Answers": {
+"A.": "new Map<Id, Account>()",
+"B.": "new List<Account>()",
+"E.": "new Account[]{<elements>}"
+}
+},
+{
+"1:": "How can a developer check if a user has read access to a field and the field can be displayed on a Visualforce page?",
+"Answers": {
+"X-->A.": "Call the IsAccessible() method of Schema.DescribeSObjectResult to verify field level read permission",
+"D.": "Call the isAccessible() method of Schema.DescribeFieldResult to verify field level read permission"
+}
+},
+{
+"1:": "Which of the following statements about defining an Apex Class are true?",
+"Answers": {
+"A.": "The keyword [class] followed by the name of the class is necessary",
+"B.": "An access modifier is required in the declaration of a top-level class",
+"D.": "A developer may add optional extensions and/or implementations."
+}
+},
+{
+"1:": "How can a dynamic SOQL query be created at runtime using input from an end user?",
+"Answers": {
+"D.": "Use the Database.query(string) with a query specified in the string"
+}
+},
+{
+"1:": "T",
+"Answers": {
+"C.": "String str;"
+}
+},
+{
+"1:": "How can a developer access a static variable named TaxRate declared in a different Apex class named TaxCalculation?",
+"Answers": {
+"D.": "TaxCalculation.TaxRate"
+}
+},
+{
+"1:": "W",
+"Answers": {
+"A.": "The innerClass does not inherit the sharing setting of the containerClass.",
+"X-->B.": "The [with/without sharing] keyword should only be defined in outer classes.",
+"C.": "[without sharing] will be the default for the inner class",
+"X-->D.": "The innerClass inherits the sharing setting of the containerClass."
+}
+},
+{
+"1:": "What method can be used to obtain metadata information about all the sObjects in an organization and their fields?",
+"Answers": {
+"C.": "getGlobalDescribe()"
+}
+},
+{
+"1:": "There are a number of standard objects that don't support DML operations. Which of these standard objects are not supported by DML Operations?",
+"Answers": {
+"A.": "Profile",
+"C.": "Record Type"
+}
+},
+{
+"1:": "What is the correct syntax for a Do While procedural loop?",
+"Answers": {
+"D.": "do {statement} while (Boolean_condition);"
+}
+},
+{
+"1:": "A",
+"Answers": {
+"C.": "Boolean isCorrect;"
+}
+},
+{
+"1:": "A developer needs to initialize a numerical value of 17. What data type should the developer use?",
+"Answers": {
+"B.": "Integer"
+}
+},
+{
+"1:": "Steadfast Insurance Inc. has a custom object Claim to track insurance claims for its team members. When a team member creates a claim record, an approval process is started which is used by the insurance manager to approve or reject the claim. In order to assist the manager, a team member's claim limit, which is a custom field on the User object, should be displayed on the claim record. What is the recommended solution to meet the requirement?",
+"Answers": {
+"C.": "Use a cross-object formula to display the user's limit on the claim record"
+}
+},
+{
+"1:": "A developer needs to create a new Contact record in his Apex Trigger. What DML statement should be used in the code?",
+"Answers": {
+"C.": "Insert"
+}
+},
+{
+"1:": "Given the following value from a Lead record, lastModifiedDate:2016-05-06 03:25:41, what data type should the developer use to retrieve this type of information?",
+"Answers": {
+"C.": "DateTime"
+}
+},
+{
+"1:": "Which of the following statements about the IF-ELSE statement are true?",
+"Answers": {
+"A.": "An IF-ELSE statement permits a choice to be made between two possible execution paths.",
+"B.": "An IF statement can be followed by a discretionary ELSE statement, which executes when the Boolean expression is false."
+}
+},
+{
+"1:": "A developer needs to retrieve the Contact records with a last name that starts with \u2018Ab\u2019. What code in the options below will satisfy his requirements?",
+"Answers": {
+"A.": "SELECT\u00a0Id, LastName FROM Contact WHERE LastName LIKE \u2018Ab%\u2019"
+}
+},
+{
+"1:": "Before deleting a record, a complex validation needs to be performed to confirm that the record can be deleted by querying a number of objects. What solution would be most appropriate in this situation?",
+"Answers": {
+"D.": "Apex trigger"
+}
+},
+{
+"1:": "The Salesforce Administrator was given a requirement to display the total cost of products at the time they are added to an opportunity. The product cost is a custom field on the product object and is added as a formula field to the opportunity product object. How would the Salesforce Administrator meet this requirement?",
+"Answers": {
+"X-->A.": "Create a roll-up summary field on the opportunity based on the product cost formula field",
+"C.": "Create a workflow rule that copies the product cost to a currency field and create a roll-up summary field based on the currency field"
+}
+},
+{
+"1:": "A developer is considering writing a trigger to perform data validation before saving a record. What other options can be used to enforce and maintain data quality?",
+"Answers": {
+"A.": "Validation rules",
+"C.": "Required fields",
+"X-->D.": "Escalation rules",
+"E.": "Restricted Picklists"
+}
+},
+{
+"1:": "Which of the following is required when defining an Apex Class Method?",
+"Answers": {
+"A.": "Return Data type"
+}
+},
+{
+"1:": "Universal Insurance uses Salesforce for managing claims. Claim is a custom object. If an email is sent from a claimant regarding an existing claim, it should be checked for a unique reference number and if found, attached to the related claim record, and the status of the claim record updated. What feature would be most appropriate for this requirement?",
+"Answers": {
+"X-->A.": "Email-to-Case",
+"B.": "Custom Email Handler"
+}
+},
+{
+"1:": "Stock Symbol is a custom field on the Account object. What is the best way to make this field appear on Contact detail page layout?",
+"Answers": {
+"B.": "Formula Field"
+}
+},
+{
+"1:": "Which of the following are true about cross-object formula fields?",
+"Answers": {
+"A.": "Cross-object formula fields can pull field values from objects that are up to 10 relationships away.",
+"B.": "Cross-object formula fields can pull field values from master-detail or lookup parent records.",
+"D.": "Cross-object formula fields can pull data from a record even if the user does not have access to it."
+}
+},
+{
+"1:": "Apex is typically executed in system mode, but which of the following executes code as the current user?",
+"Answers": {
+"C.": "Anonymous Code Blocks",
+"X-->D.": "Apex Triggers"
+}
+},
+{
+"1:": "Which of the following tasks are best achieved using Process Builder instead of Workflow Rules?",
+"Answers": {
+"B.": "Submitting an Order for approval",
+"C.": "Copying the Account postal code to all child contacts",
+"X-->D.": "Field update on parent object."
+}
+},
+{
+"1:": "The Stage field on all related Opportunity records should be updated to 'Closed Lost' when the value of a 'Status' custom field on the Account record is changed to 'Inactive' by a sales user. What should be used to meet this requirement?",
+"Answers": {
+"B.": "Process Builder",
+"X-->D.": "Flow Builder"
+}
+},
+{
+"1:": "How can a developer ensure that a variable 'Day' will only contain specific set of constants such as SUNDAY, MONDAY, ...SATURDAY? What should variable 'Day' be declared as?",
+"Answers": {
+"B.": "enum Day {SUNDAY, MONDAY, ...SATURDAY}",
+"X-->D.": "map<Id, String>Day {SUNDAY, MONDAY, ...SATURDAY}"
+}
+},
+{
+"1:": "How can a developer get all picklist values of a specific field via Apex?",
+"Answers": {
+"X-->B.": "Use the describePicklist method",
+"D.": "Use the getPicklistValues method"
+}
+},
+{
+"1:": "In the following line of code, why can the helloWorld() method be called directly instead of instantiating the myClass?",
+"Answers": {
+"B.": "helloWorld is defined as a static method"
+}
+},
+{
+"1:": "Which of the following DML operations will allow other records in a list to be inserted even if there are records that failed?",
+"Answers": {
+"A.": "Database.insert(sObjectsToCreate, false);",
+"X-->D.": "Database.insert(sObjectsToCreate, true);"
+}
+},
+{
+"1:": "Universal Containers would like to see a Red / Yellow / Green Traffic Light representation on the Opportunity detail page, based on the value in the Opportunity Probability field. What would you use to achieve this?",
+"Answers": {
+"A.": "Formula Field"
+}
+},
+{
+"1:": "Which of the following can be used to update existing standard and custom fields on child records automatically when a parent record is modified?",
+"Answers": {
+"B.": "Apex Trigger",
+"C.": "Process Builder"
+}
+},
+{
+"1:": "What should a developer consider when using the upsert operation to insert and update records?",
+"Answers": {
+"B.": "Using the upsert operation, the administrator can either insert or update an existing record in one call.",
+"C.": "To determine whether a record already exists, the upsert statement or Database method uses the ID of the record as the key to match records, a custom external ID field, or a standard field with the idLookup attribute set to true.",
+"E.": "If the key is not matched, a new object record is created. If the key is matched once, the existing object record is updated."
+}
+},
+{
+"1:": "W",
+"Answers": {
+"B.": "16"
+}
+},
+{
+"1:": "Which of the following access modifiers are supported in Apex?",
+"Answers": {
+"B.": "public",
+"C.": "global",
+"D.": "private"
+}
+},
+{
+"1:": "A",
+"Answers": {
+"A.": "Results were evenly distributed among the objects returned."
+}
+},
+{
+"1:": "Which of the following requirements could a developer use a formula field for?",
+"Answers": {
+"B.": "Displaying a traffic light image of red, yellow, or green based on case priority.",
+"C.": "Creating a link to an application outside of Salesforce, passing parameters including the session Id."
+}
+},
+{
+"1:": "Which of the following field types can a Roll-Up Summary field calculate?",
+"Answers": {
+"A.": "Number"
+}
+},
+{
+"1:": "There are several escape sequences that can be used in queries so that a user query can contain special characters. Which of the following are valid escape sequences?",
+"Answers": {
+"A.": "\\'",
+"B.": "\\n",
+"E.": "\\\""
+}
+},
+{
+"1:": "An organization has enabled Multiple Currencies. A developer needs to calculate the total of the Estimated_value__c on CampaignMember object using a roll-up summary field on Campaign object named Total_estimated_value__c. What will be the currency of the Total_estimated_value__c field?",
+"Answers": {
+"X-->B.": "The field values in Estimated_value__c from CampaignMember object are converted into the currency of the current user, and the Total_estimated_value__c is shown using the currency of the current user on the Campaign.",
+"C.": "The field values in Estimated_value__c from CampaignMember object are converted into the currency of the Campaign, and the Total_estimated_value__c is shown using the currency of the Campaign."
+}
+},
+{
+"1:": "Which of the following are valid Apex variables?",
+"Answers": {
+"A.": "String a,b,c;",
+"C.": "Map<ID, String> sampleMap;",
+"E.": "Boolean y;"
+}
+}
+][
+{
+"1:": "What is the discretionary clause that can be added to a SOSL query to specify the information to be returned in the text search result?",
+"Answers": {
+"A.": "RETURNING",
+"X-->B.": "LIMIT n"
+}
+},
+{
+"1:": "Which of the following are valid use cases of Apex code?",
+"Answers": {
+"B.": "Server-side calls from custom Lightning components",
+"C.": "Triggers",
+"D.": "Web Service"
+}
+},
+{
+"1:": "W",
+"Answers": {
+"B.": "Constructor"
+}
+},
+{
+"1:": "A PageReference is a reference to an instantiation of a page. Which of the following are valid means of instantiating a PageReference?",
+"Answers": {
+"A.": "PageReference pageRef = new PageReference('URL');",
+"X-->C.": "PageReference.page('URL')",
+"D.": "Page.existingPageName"
+}
+},
+{
+"1:": "An administrator needs to get records with locations saved in geolocation or address fields as individual latitude and longitude values.",
+"Answers": {
+"A.": "SELECT\u00a0Id, Name, Location__latitude__s, Location__longitude__s FROM CustomObject__c",
+"X-->C.": "SELECT\u00a0Id, Name, Location__r.latitude__c, Location__r.longitude__c FROM CustomObject__c"
+}
+},
+{
+"1:": "Which data type is appropriate for a numerical value of 726.234 stored in the variable totalCost?",
+"Answers": {
+"B.": "Decimal totalCost;"
+}
+},
+{
+"1:": "A recruitment application is being developed to manage job vacancies and job applications. The business wants to display the number of applications for each job vacancy, and the number should be automatically updated when applications are created or deleted. Also, the parent job vacancy record's security settings should not be inherited by the job application record. Which of the following options are the most suitable for this requirement?",
+"Answers": {
+"C.": "Use Flow Builder to count the job applications and update the field on the parent record.",
+"D.": "Create a lookup relationship between the two objects."
+}
+},
+{
+"1:": "In Apex, an expression is a construct made up of variables, operators, and method invocations that evaluates to a single value. Which of the following are valid Apex expressions?",
+"Answers": {
+"B.": "myClass.myMethod()",
+"C.": "new List<Opportunity>()",
+"D.": "3 + 4"
+}
+},
+{
+"1:": "How can a developer check if the current user is able to delete the current object?",
+"Answers": {
+"C.": "Use the isDeletable() method of the DescribeSObjectResult Class"
+}
+},
+{
+"1:": "What will be the output if the code below is executed when the value of testRawScore variable is 75?",
+"Answers": {
+"A.": "Value of gradeEqual = D",
+"X-->D.": "Value of gradeEqual = C"
+}
+},
+{
+"1:": "A developer requires a variable numberOfStudents with a constant value of 25 that is accessible only within the Apex class in which it is defined. Which of the following is the best variable declaration?",
+"Answers": {
+"B.": "private static final Integer numberOfStudents = 25;"
+}
+},
+{
+"1:": "What will be the result if the code below is executed when the variable testRawScore is 75?",
+"Answers": {
+"D.": "Grade C"
+}
+},
+{
+"1:": "Which of the following statements are true when defining Apex classes?",
+"Answers": {
+"B.": "It is optional to specify an access modifier in declaring inner class.",
+"D.": "It is required to specify an access modifier in declaring top-level class."
+}
+},
+{
+"1:": "Which of the following statements about delete and undelete DML operations are true?",
+"Answers": {
+"A.": "In a master-detail relationship, child records are deleted when the parent record is deleted.",
+"B.": "All custom lookup relationships that have not been replaced can be restored.",
+"X-->D.": "The undelete operation does not restore the record associations for parent cases.",
+"E.": "Parent and child account records are supported by the undelete operation."
+}
+},
+{
+"1:": "How would a developer write a query to return the number of leads for each lead source?",
+"Answers": {
+"A.": "SELECT LeadSource, COUNT(Name) FROM Lead GROUP BY LeadSource"
+}
+},
+{
+"1:": "What are reasons for using a static method or variable?",
+"Answers": {
+"A.": "To use a method or variable without instantiating its class",
+"B.": "To create a utility method in a class",
+"D.": "To store information that is shared across instances of a class",
+"X-->E.": "To persist a variable value beyond the context of a single transaction"
+}
+},
+{
+"1:": "To fulfill a business requirement, a formula field of a child object has been used in a roll-up summary field of a Master object. Will the roll-up summary field function correctly?",
+"Answers": {
+"B.": "Yes, if the formula field is not referring to another field in a different object",
+"X-->D.": "No, using formula fields in a roll-up summary is not supported."
+}
+},
+{
+"1:": "A company would like to send record information to a legacy system when a criteria is met. A developer can accomplish this requirement by using:",
+"Answers": {
+"B.": "Workflow Rule with Outbound Message"
+}
+},
+{
+"1:": "Given the following options, what are the valid ways to declare a collection variable?",
+"Answers": {
+"A.": "new Map<Id, Account>()",
+"B.": "new List<Account>()",
+"E.": "new Account[]{<elements>}"
+}
+},
+{
+"1:": "How can a developer check if a user has read access to a field and the field can be displayed on a Visualforce page?",
+"Answers": {
+"X-->A.": "Call the IsAccessible() method of Schema.DescribeSObjectResult to verify field level read permission",
+"D.": "Call the isAccessible() method of Schema.DescribeFieldResult to verify field level read permission"
+}
+},
+{
+"1:": "Which of the following statements about defining an Apex Class are true?",
+"Answers": {
+"A.": "The keyword [class] followed by the name of the class is necessary",
+"B.": "An access modifier is required in the declaration of a top-level class",
+"D.": "A developer may add optional extensions and/or implementations."
+}
+},
+{
+"1:": "How can a dynamic SOQL query be created at runtime using input from an end user?",
+"Answers": {
+"D.": "Use the Database.query(string) with a query specified in the string"
+}
+},
+{
+"1:": "T",
+"Answers": {
+"C.": "String str;"
+}
+},
+{
+"1:": "How can a developer access a static variable named TaxRate declared in a different Apex class named TaxCalculation?",
+"Answers": {
+"D.": "TaxCalculation.TaxRate"
+}
+},
+{
+"1:": "W",
+"Answers": {
+"A.": "The innerClass does not inherit the sharing setting of the containerClass.",
+"X-->B.": "The [with/without sharing] keyword should only be defined in outer classes.",
+"C.": "[without sharing] will be the default for the inner class",
+"X-->D.": "The innerClass inherits the sharing setting of the containerClass."
+}
+},
+{
+"1:": "What method can be used to obtain metadata information about all the sObjects in an organization and their fields?",
+"Answers": {
+"C.": "getGlobalDescribe()"
+}
+},
+{
+"1:": "There are a number of standard objects that don't support DML operations. Which of these standard objects are not supported by DML Operations?",
+"Answers": {
+"A.": "Profile",
+"C.": "Record Type"
+}
+},
+{
+"1:": "What is the correct syntax for a Do While procedural loop?",
+"Answers": {
+"D.": "do {statement} while (Boolean_condition);"
+}
+},
+{
+"1:": "A",
+"Answers": {
+"C.": "Boolean isCorrect;"
+}
+},
+{
+"1:": "A developer needs to initialize a numerical value of 17. What data type should the developer use?",
+"Answers": {
+"B.": "Integer"
+}
+},
+{
+"1:": "Steadfast Insurance Inc. has a custom object Claim to track insurance claims for its team members. When a team member creates a claim record, an approval process is started which is used by the insurance manager to approve or reject the claim. In order to assist the manager, a team member's claim limit, which is a custom field on the User object, should be displayed on the claim record. What is the recommended solution to meet the requirement?",
+"Answers": {
+"C.": "Use a cross-object formula to display the user's limit on the claim record"
+}
+},
+{
+"1:": "A developer needs to create a new Contact record in his Apex Trigger. What DML statement should be used in the code?",
+"Answers": {
+"C.": "Insert"
+}
+},
+{
+"1:": "Given the following value from a Lead record, lastModifiedDate:2016-05-06 03:25:41, what data type should the developer use to retrieve this type of information?",
+"Answers": {
+"C.": "DateTime"
+}
+},
+{
+"1:": "Which of the following statements about the IF-ELSE statement are true?",
+"Answers": {
+"A.": "An IF-ELSE statement permits a choice to be made between two possible execution paths.",
+"B.": "An IF statement can be followed by a discretionary ELSE statement, which executes when the Boolean expression is false."
+}
+},
+{
+"1:": "A developer needs to retrieve the Contact records with a last name that starts with \u2018Ab\u2019. What code in the options below will satisfy his requirements?",
+"Answers": {
+"A.": "SELECT\u00a0Id, LastName FROM Contact WHERE LastName LIKE \u2018Ab%\u2019"
+}
+},
+{
+"1:": "Before deleting a record, a complex validation needs to be performed to confirm that the record can be deleted by querying a number of objects. What solution would be most appropriate in this situation?",
+"Answers": {
+"D.": "Apex trigger"
+}
+},
+{
+"1:": "The Salesforce Administrator was given a requirement to display the total cost of products at the time they are added to an opportunity. The product cost is a custom field on the product object and is added as a formula field to the opportunity product object. How would the Salesforce Administrator meet this requirement?",
+"Answers": {
+"X-->A.": "Create a roll-up summary field on the opportunity based on the product cost formula field",
+"C.": "Create a workflow rule that copies the product cost to a currency field and create a roll-up summary field based on the currency field"
+}
+},
+{
+"1:": "A developer is considering writing a trigger to perform data validation before saving a record. What other options can be used to enforce and maintain data quality?",
+"Answers": {
+"A.": "Validation rules",
+"C.": "Required fields",
+"X-->D.": "Escalation rules",
+"E.": "Restricted Picklists"
+}
+},
+{
+"1:": "Which of the following is required when defining an Apex Class Method?",
+"Answers": {
+"A.": "Return Data type"
+}
+},
+{
+"1:": "Universal Insurance uses Salesforce for managing claims. Claim is a custom object. If an email is sent from a claimant regarding an existing claim, it should be checked for a unique reference number and if found, attached to the related claim record, and the status of the claim record updated. What feature would be most appropriate for this requirement?",
+"Answers": {
+"X-->A.": "Email-to-Case",
+"B.": "Custom Email Handler"
+}
+},
+{
+"1:": "Stock Symbol is a custom field on the Account object. What is the best way to make this field appear on Contact detail page layout?",
+"Answers": {
+"B.": "Formula Field"
+}
+},
+{
+"1:": "Which of the following are true about cross-object formula fields?",
+"Answers": {
+"A.": "Cross-object formula fields can pull field values from objects that are up to 10 relationships away.",
+"B.": "Cross-object formula fields can pull field values from master-detail or lookup parent records.",
+"D.": "Cross-object formula fields can pull data from a record even if the user does not have access to it."
+}
+},
+{
+"1:": "Apex is typically executed in system mode, but which of the following executes code as the current user?",
+"Answers": {
+"C.": "Anonymous Code Blocks",
+"X-->D.": "Apex Triggers"
+}
+},
+{
+"1:": "Which of the following tasks are best achieved using Process Builder instead of Workflow Rules?",
+"Answers": {
+"B.": "Submitting an Order for approval",
+"C.": "Copying the Account postal code to all child contacts",
+"X-->D.": "Field update on parent object."
+}
+},
+{
+"1:": "The Stage field on all related Opportunity records should be updated to 'Closed Lost' when the value of a 'Status' custom field on the Account record is changed to 'Inactive' by a sales user. What should be used to meet this requirement?",
+"Answers": {
+"B.": "Process Builder",
+"X-->D.": "Flow Builder"
+}
+},
+{
+"1:": "How can a developer ensure that a variable 'Day' will only contain specific set of constants such as SUNDAY, MONDAY, ...SATURDAY? What should variable 'Day' be declared as?",
+"Answers": {
+"B.": "enum Day {SUNDAY, MONDAY, ...SATURDAY}",
+"X-->D.": "map<Id, String>Day {SUNDAY, MONDAY, ...SATURDAY}"
+}
+},
+{
+"1:": "How can a developer get all picklist values of a specific field via Apex?",
+"Answers": {
+"X-->B.": "Use the describePicklist method",
+"D.": "Use the getPicklistValues method"
+}
+},
+{
+"1:": "In the following line of code, why can the helloWorld() method be called directly instead of instantiating the myClass?",
+"Answers": {
+"B.": "helloWorld is defined as a static method"
+}
+},
+{
+"1:": "Which of the following DML operations will allow other records in a list to be inserted even if there are records that failed?",
+"Answers": {
+"A.": "Database.insert(sObjectsToCreate, false);",
+"X-->D.": "Database.insert(sObjectsToCreate, true);"
+}
+},
+{
+"1:": "Universal Containers would like to see a Red / Yellow / Green Traffic Light representation on the Opportunity detail page, based on the value in the Opportunity Probability field. What would you use to achieve this?",
+"Answers": {
+"A.": "Formula Field"
+}
+},
+{
+"1:": "Which of the following can be used to update existing standard and custom fields on child records automatically when a parent record is modified?",
+"Answers": {
+"B.": "Apex Trigger",
+"C.": "Process Builder"
+}
+},
+{
+"1:": "What should a developer consider when using the upsert operation to insert and update records?",
+"Answers": {
+"B.": "Using the upsert operation, the administrator can either insert or update an existing record in one call.",
+"C.": "To determine whether a record already exists, the upsert statement or Database method uses the ID of the record as the key to match records, a custom external ID field, or a standard field with the idLookup attribute set to true.",
+"E.": "If the key is not matched, a new object record is created. If the key is matched once, the existing object record is updated."
+}
+},
+{
+"1:": "W",
+"Answers": {
+"B.": "16"
+}
+},
+{
+"1:": "Which of the following access modifiers are supported in Apex?",
+"Answers": {
+"B.": "public",
+"C.": "global",
+"D.": "private"
+}
+},
+{
+"1:": "A",
+"Answers": {
+"A.": "Results were evenly distributed among the objects returned."
+}
+},
+{
+"1:": "Which of the following requirements could a developer use a formula field for?",
+"Answers": {
+"B.": "Displaying a traffic light image of red, yellow, or green based on case priority.",
+"C.": "Creating a link to an application outside of Salesforce, passing parameters including the session Id."
+}
+},
+{
+"1:": "Which of the following field types can a Roll-Up Summary field calculate?",
+"Answers": {
+"A.": "Number"
+}
+},
+{
+"1:": "There are several escape sequences that can be used in queries so that a user query can contain special characters. Which of the following are valid escape sequences?",
+"Answers": {
+"A.": "\\'",
+"B.": "\\n",
+"E.": "\\\""
+}
+},
+{
+"1:": "An organization has enabled Multiple Currencies. A developer needs to calculate the total of the Estimated_value__c on CampaignMember object using a roll-up summary field on Campaign object named Total_estimated_value__c. What will be the currency of the Total_estimated_value__c field?",
+"Answers": {
+"X-->B.": "The field values in Estimated_value__c from CampaignMember object are converted into the currency of the current user, and the Total_estimated_value__c is shown using the currency of the current user on the Campaign.",
+"C.": "The field values in Estimated_value__c from CampaignMember object are converted into the currency of the Campaign, and the Total_estimated_value__c is shown using the currency of the Campaign."
+}
+},
+{
+"1:": "Which of the following are valid Apex variables?",
+"Answers": {
+"A.": "String a,b,c;",
+"C.": "Map<ID, String> sampleMap;",
+"E.": "Boolean y;"
+}
+}
+][
+{
+"1:": "What is the discretionary clause that can be added to a SOSL query to specify the information to be returned in the text search result?",
+"Answers": {
+"A.": "RETURNING",
+"X-->B.": "LIMIT n"
+}
+},
+{
+"1:": "Which of the following are valid use cases of Apex code?",
+"Answers": {
+"B.": "Server-side calls from custom Lightning components",
+"C.": "Triggers",
+"D.": "Web Service"
+}
+},
+{
+"1:": "W",
+"Answers": {
+"B.": "Constructor"
+}
+},
+{
+"1:": "A PageReference is a reference to an instantiation of a page. Which of the following are valid means of instantiating a PageReference?",
+"Answers": {
+"A.": "PageReference pageRef = new PageReference('URL');",
+"X-->C.": "PageReference.page('URL')",
+"D.": "Page.existingPageName"
+}
+},
+{
+"1:": "An administrator needs to get records with locations saved in geolocation or address fields as individual latitude and longitude values.",
+"Answers": {
+"A.": "SELECT\u00a0Id, Name, Location__latitude__s, Location__longitude__s FROM CustomObject__c",
+"X-->C.": "SELECT\u00a0Id, Name, Location__r.latitude__c, Location__r.longitude__c FROM CustomObject__c"
+}
+},
+{
+"1:": "Which data type is appropriate for a numerical value of 726.234 stored in the variable totalCost?",
+"Answers": {
+"B.": "Decimal totalCost;"
+}
+},
+{
+"1:": "A recruitment application is being developed to manage job vacancies and job applications. The business wants to display the number of applications for each job vacancy, and the number should be automatically updated when applications are created or deleted. Also, the parent job vacancy record's security settings should not be inherited by the job application record. Which of the following options are the most suitable for this requirement?",
+"Answers": {
+"C.": "Use Flow Builder to count the job applications and update the field on the parent record.",
+"D.": "Create a lookup relationship between the two objects."
+}
+},
+{
+"1:": "In Apex, an expression is a construct made up of variables, operators, and method invocations that evaluates to a single value. Which of the following are valid Apex expressions?",
+"Answers": {
+"B.": "myClass.myMethod()",
+"C.": "new List<Opportunity>()",
+"D.": "3 + 4"
+}
+},
+{
+"1:": "How can a developer check if the current user is able to delete the current object?",
+"Answers": {
+"C.": "Use the isDeletable() method of the DescribeSObjectResult Class"
+}
+},
+{
+"1:": "What will be the output if the code below is executed when the value of testRawScore variable is 75?",
+"Answers": {
+"A.": "Value of gradeEqual = D",
+"X-->D.": "Value of gradeEqual = C"
+}
+},
+{
+"1:": "A developer requires a variable numberOfStudents with a constant value of 25 that is accessible only within the Apex class in which it is defined. Which of the following is the best variable declaration?",
+"Answers": {
+"B.": "private static final Integer numberOfStudents = 25;"
+}
+},
+{
+"1:": "What will be the result if the code below is executed when the variable testRawScore is 75?",
+"Answers": {
+"D.": "Grade C"
+}
+},
+{
+"1:": "Which of the following statements are true when defining Apex classes?",
+"Answers": {
+"B.": "It is optional to specify an access modifier in declaring inner class.",
+"D.": "It is required to specify an access modifier in declaring top-level class."
+}
+},
+{
+"1:": "Which of the following statements about delete and undelete DML operations are true?",
+"Answers": {
+"A.": "In a master-detail relationship, child records are deleted when the parent record is deleted.",
+"B.": "All custom lookup relationships that have not been replaced can be restored.",
+"X-->D.": "The undelete operation does not restore the record associations for parent cases.",
+"E.": "Parent and child account records are supported by the undelete operation."
+}
+},
+{
+"1:": "How would a developer write a query to return the number of leads for each lead source?",
+"Answers": {
+"A.": "SELECT LeadSource, COUNT(Name) FROM Lead GROUP BY LeadSource"
+}
+},
+{
+"1:": "What are reasons for using a static method or variable?",
+"Answers": {
+"A.": "To use a method or variable without instantiating its class",
+"B.": "To create a utility method in a class",
+"D.": "To store information that is shared across instances of a class",
+"X-->E.": "To persist a variable value beyond the context of a single transaction"
+}
+},
+{
+"1:": "To fulfill a business requirement, a formula field of a child object has been used in a roll-up summary field of a Master object. Will the roll-up summary field function correctly?",
+"Answers": {
+"B.": "Yes, if the formula field is not referring to another field in a different object",
+"X-->D.": "No, using formula fields in a roll-up summary is not supported."
+}
+},
+{
+"1:": "A company would like to send record information to a legacy system when a criteria is met. A developer can accomplish this requirement by using:",
+"Answers": {
+"B.": "Workflow Rule with Outbound Message"
+}
+},
+{
+"1:": "Given the following options, what are the valid ways to declare a collection variable?",
+"Answers": {
+"A.": "new Map<Id, Account>()",
+"B.": "new List<Account>()",
+"E.": "new Account[]{<elements>}"
+}
+},
+{
+"1:": "How can a developer check if a user has read access to a field and the field can be displayed on a Visualforce page?",
+"Answers": {
+"X-->A.": "Call the IsAccessible() method of Schema.DescribeSObjectResult to verify field level read permission",
+"D.": "Call the isAccessible() method of Schema.DescribeFieldResult to verify field level read permission"
+}
+},
+{
+"1:": "Which of the following statements about defining an Apex Class are true?",
+"Answers": {
+"A.": "The keyword [class] followed by the name of the class is necessary",
+"B.": "An access modifier is required in the declaration of a top-level class",
+"D.": "A developer may add optional extensions and/or implementations."
+}
+},
+{
+"1:": "How can a dynamic SOQL query be created at runtime using input from an end user?",
+"Answers": {
+"D.": "Use the Database.query(string) with a query specified in the string"
+}
+},
+{
+"1:": "T",
+"Answers": {
+"C.": "String str;"
+}
+},
+{
+"1:": "How can a developer access a static variable named TaxRate declared in a different Apex class named TaxCalculation?",
+"Answers": {
+"D.": "TaxCalculation.TaxRate"
+}
+},
+{
+"1:": "W",
+"Answers": {
+"A.": "The innerClass does not inherit the sharing setting of the containerClass.",
+"X-->B.": "The [with/without sharing] keyword should only be defined in outer classes.",
+"C.": "[without sharing] will be the default for the inner class",
+"X-->D.": "The innerClass inherits the sharing setting of the containerClass."
+}
+},
+{
+"1:": "What method can be used to obtain metadata information about all the sObjects in an organization and their fields?",
+"Answers": {
+"C.": "getGlobalDescribe()"
+}
+},
+{
+"1:": "There are a number of standard objects that don't support DML operations. Which of these standard objects are not supported by DML Operations?",
+"Answers": {
+"A.": "Profile",
+"C.": "Record Type"
+}
+},
+{
+"1:": "What is the correct syntax for a Do While procedural loop?",
+"Answers": {
+"D.": "do {statement} while (Boolean_condition);"
+}
+},
+{
+"1:": "A",
+"Answers": {
+"C.": "Boolean isCorrect;"
+}
+},
+{
+"1:": "A developer needs to initialize a numerical value of 17. What data type should the developer use?",
+"Answers": {
+"B.": "Integer"
+}
+},
+{
+"1:": "Steadfast Insurance Inc. has a custom object Claim to track insurance claims for its team members. When a team member creates a claim record, an approval process is started which is used by the insurance manager to approve or reject the claim. In order to assist the manager, a team member's claim limit, which is a custom field on the User object, should be displayed on the claim record. What is the recommended solution to meet the requirement?",
+"Answers": {
+"C.": "Use a cross-object formula to display the user's limit on the claim record"
+}
+},
+{
+"1:": "A developer needs to create a new Contact record in his Apex Trigger. What DML statement should be used in the code?",
+"Answers": {
+"C.": "Insert"
+}
+},
+{
+"1:": "Given the following value from a Lead record, lastModifiedDate:2016-05-06 03:25:41, what data type should the developer use to retrieve this type of information?",
+"Answers": {
+"C.": "DateTime"
+}
+},
+{
+"1:": "Which of the following statements about the IF-ELSE statement are true?",
+"Answers": {
+"A.": "An IF-ELSE statement permits a choice to be made between two possible execution paths.",
+"B.": "An IF statement can be followed by a discretionary ELSE statement, which executes when the Boolean expression is false."
+}
+},
+{
+"1:": "A developer needs to retrieve the Contact records with a last name that starts with \u2018Ab\u2019. What code in the options below will satisfy his requirements?",
+"Answers": {
+"A.": "SELECT\u00a0Id, LastName FROM Contact WHERE LastName LIKE \u2018Ab%\u2019"
+}
+},
+{
+"1:": "Before deleting a record, a complex validation needs to be performed to confirm that the record can be deleted by querying a number of objects. What solution would be most appropriate in this situation?",
+"Answers": {
+"D.": "Apex trigger"
+}
+},
+{
+"1:": "The Salesforce Administrator was given a requirement to display the total cost of products at the time they are added to an opportunity. The product cost is a custom field on the product object and is added as a formula field to the opportunity product object. How would the Salesforce Administrator meet this requirement?",
+"Answers": {
+"X-->A.": "Create a roll-up summary field on the opportunity based on the product cost formula field",
+"C.": "Create a workflow rule that copies the product cost to a currency field and create a roll-up summary field based on the currency field"
+}
+},
+{
+"1:": "A developer is considering writing a trigger to perform data validation before saving a record. What other options can be used to enforce and maintain data quality?",
+"Answers": {
+"A.": "Validation rules",
+"C.": "Required fields",
+"X-->D.": "Escalation rules",
+"E.": "Restricted Picklists"
+}
+},
+{
+"1:": "Which of the following is required when defining an Apex Class Method?",
+"Answers": {
+"A.": "Return Data type"
+}
+},
+{
+"1:": "Universal Insurance uses Salesforce for managing claims. Claim is a custom object. If an email is sent from a claimant regarding an existing claim, it should be checked for a unique reference number and if found, attached to the related claim record, and the status of the claim record updated. What feature would be most appropriate for this requirement?",
+"Answers": {
+"X-->A.": "Email-to-Case",
+"B.": "Custom Email Handler"
+}
+},
+{
+"1:": "Stock Symbol is a custom field on the Account object. What is the best way to make this field appear on Contact detail page layout?",
+"Answers": {
+"B.": "Formula Field"
+}
+},
+{
+"1:": "Which of the following are true about cross-object formula fields?",
+"Answers": {
+"A.": "Cross-object formula fields can pull field values from objects that are up to 10 relationships away.",
+"B.": "Cross-object formula fields can pull field values from master-detail or lookup parent records.",
+"D.": "Cross-object formula fields can pull data from a record even if the user does not have access to it."
+}
+},
+{
+"1:": "Apex is typically executed in system mode, but which of the following executes code as the current user?",
+"Answers": {
+"C.": "Anonymous Code Blocks",
+"X-->D.": "Apex Triggers"
+}
+},
+{
+"1:": "Which of the following tasks are best achieved using Process Builder instead of Workflow Rules?",
+"Answers": {
+"B.": "Submitting an Order for approval",
+"C.": "Copying the Account postal code to all child contacts",
+"X-->D.": "Field update on parent object."
+}
+},
+{
+"1:": "The Stage field on all related Opportunity records should be updated to 'Closed Lost' when the value of a 'Status' custom field on the Account record is changed to 'Inactive' by a sales user. What should be used to meet this requirement?",
+"Answers": {
+"B.": "Process Builder",
+"X-->D.": "Flow Builder"
+}
+},
+{
+"1:": "How can a developer ensure that a variable 'Day' will only contain specific set of constants such as SUNDAY, MONDAY, ...SATURDAY? What should variable 'Day' be declared as?",
+"Answers": {
+"B.": "enum Day {SUNDAY, MONDAY, ...SATURDAY}",
+"X-->D.": "map<Id, String>Day {SUNDAY, MONDAY, ...SATURDAY}"
+}
+},
+{
+"1:": "How can a developer get all picklist values of a specific field via Apex?",
+"Answers": {
+"X-->B.": "Use the describePicklist method",
+"D.": "Use the getPicklistValues method"
+}
+},
+{
+"1:": "In the following line of code, why can the helloWorld() method be called directly instead of instantiating the myClass?",
+"Answers": {
+"B.": "helloWorld is defined as a static method"
+}
+},
+{
+"1:": "Which of the following DML operations will allow other records in a list to be inserted even if there are records that failed?",
+"Answers": {
+"A.": "Database.insert(sObjectsToCreate, false);",
+"X-->D.": "Database.insert(sObjectsToCreate, true);"
+}
+},
+{
+"1:": "Universal Containers would like to see a Red / Yellow / Green Traffic Light representation on the Opportunity detail page, based on the value in the Opportunity Probability field. What would you use to achieve this?",
+"Answers": {
+"A.": "Formula Field"
+}
+},
+{
+"1:": "Which of the following can be used to update existing standard and custom fields on child records automatically when a parent record is modified?",
+"Answers": {
+"B.": "Apex Trigger",
+"C.": "Process Builder"
+}
+},
+{
+"1:": "What should a developer consider when using the upsert operation to insert and update records?",
+"Answers": {
+"B.": "Using the upsert operation, the administrator can either insert or update an existing record in one call.",
+"C.": "To determine whether a record already exists, the upsert statement or Database method uses the ID of the record as the key to match records, a custom external ID field, or a standard field with the idLookup attribute set to true.",
+"E.": "If the key is not matched, a new object record is created. If the key is matched once, the existing object record is updated."
+}
+},
+{
+"1:": "W",
+"Answers": {
+"B.": "16"
+}
+},
+{
+"1:": "Which of the following access modifiers are supported in Apex?",
+"Answers": {
+"B.": "public",
+"C.": "global",
+"D.": "private"
+}
+},
+{
+"1:": "A",
+"Answers": {
+"A.": "Results were evenly distributed among the objects returned."
+}
+},
+{
+"1:": "Which of the following requirements could a developer use a formula field for?",
+"Answers": {
+"B.": "Displaying a traffic light image of red, yellow, or green based on case priority.",
+"C.": "Creating a link to an application outside of Salesforce, passing parameters including the session Id."
+}
+},
+{
+"1:": "Which of the following field types can a Roll-Up Summary field calculate?",
+"Answers": {
+"A.": "Number"
+}
+},
+{
+"1:": "There are several escape sequences that can be used in queries so that a user query can contain special characters. Which of the following are valid escape sequences?",
+"Answers": {
+"A.": "\\'",
+"B.": "\\n",
+"E.": "\\\""
+}
+},
+{
+"1:": "An organization has enabled Multiple Currencies. A developer needs to calculate the total of the Estimated_value__c on CampaignMember object using a roll-up summary field on Campaign object named Total_estimated_value__c. What will be the currency of the Total_estimated_value__c field?",
+"Answers": {
+"X-->B.": "The field values in Estimated_value__c from CampaignMember object are converted into the currency of the current user, and the Total_estimated_value__c is shown using the currency of the current user on the Campaign.",
+"C.": "The field values in Estimated_value__c from CampaignMember object are converted into the currency of the Campaign, and the Total_estimated_value__c is shown using the currency of the Campaign."
+}
+},
+{
+"1:": "Which of the following are valid Apex variables?",
+"Answers": {
+"A.": "String a,b,c;",
+"C.": "Map<ID, String> sampleMap;",
+"E.": "Boolean y;"
+}
+}
+][
+{
+"1:": "What is the discretionary clause that can be added to a SOSL query to specify the information to be returned in the text search result?",
+"Answers": {
+"A.": "RETURNING",
+"X-->B.": "LIMIT n"
+}
+},
+{
+"1:": "Which of the following are valid use cases of Apex code?",
+"Answers": {
+"B.": "Server-side calls from custom Lightning components",
+"C.": "Triggers",
+"D.": "Web Service"
+}
+},
+{
+"1:": "W",
+"Answers": {
+"B.": "Constructor"
+}
+},
+{
+"1:": "A PageReference is a reference to an instantiation of a page. Which of the following are valid means of instantiating a PageReference?",
+"Answers": {
+"A.": "PageReference pageRef = new PageReference('URL');",
+"X-->C.": "PageReference.page('URL')",
+"D.": "Page.existingPageName"
+}
+},
+{
+"1:": "An administrator needs to get records with locations saved in geolocation or address fields as individual latitude and longitude values.",
+"Answers": {
+"A.": "SELECT\u00a0Id, Name, Location__latitude__s, Location__longitude__s FROM CustomObject__c",
+"X-->C.": "SELECT\u00a0Id, Name, Location__r.latitude__c, Location__r.longitude__c FROM CustomObject__c"
+}
+},
+{
+"1:": "Which data type is appropriate for a numerical value of 726.234 stored in the variable totalCost?",
+"Answers": {
+"B.": "Decimal totalCost;"
+}
+},
+{
+"1:": "A recruitment application is being developed to manage job vacancies and job applications. The business wants to display the number of applications for each job vacancy, and the number should be automatically updated when applications are created or deleted. Also, the parent job vacancy record's security settings should not be inherited by the job application record. Which of the following options are the most suitable for this requirement?",
+"Answers": {
+"C.": "Use Flow Builder to count the job applications and update the field on the parent record.",
+"D.": "Create a lookup relationship between the two objects."
+}
+},
+{
+"1:": "In Apex, an expression is a construct made up of variables, operators, and method invocations that evaluates to a single value. Which of the following are valid Apex expressions?",
+"Answers": {
+"B.": "myClass.myMethod()",
+"C.": "new List<Opportunity>()",
+"D.": "3 + 4"
+}
+},
+{
+"1:": "How can a developer check if the current user is able to delete the current object?",
+"Answers": {
+"C.": "Use the isDeletable() method of the DescribeSObjectResult Class"
+}
+},
+{
+"1:": "What will be the output if the code below is executed when the value of testRawScore variable is 75?",
+"Answers": {
+"A.": "Value of gradeEqual = D",
+"X-->D.": "Value of gradeEqual = C"
+}
+},
+{
+"1:": "A developer requires a variable numberOfStudents with a constant value of 25 that is accessible only within the Apex class in which it is defined. Which of the following is the best variable declaration?",
+"Answers": {
+"B.": "private static final Integer numberOfStudents = 25;"
+}
+},
+{
+"1:": "What will be the result if the code below is executed when the variable testRawScore is 75?",
+"Answers": {
+"D.": "Grade C"
+}
+},
+{
+"1:": "Which of the following statements are true when defining Apex classes?",
+"Answers": {
+"B.": "It is optional to specify an access modifier in declaring inner class.",
+"D.": "It is required to specify an access modifier in declaring top-level class."
+}
+},
+{
+"1:": "Which of the following statements about delete and undelete DML operations are true?",
+"Answers": {
+"A.": "In a master-detail relationship, child records are deleted when the parent record is deleted.",
+"B.": "All custom lookup relationships that have not been replaced can be restored.",
+"X-->D.": "The undelete operation does not restore the record associations for parent cases.",
+"E.": "Parent and child account records are supported by the undelete operation."
+}
+},
+{
+"1:": "How would a developer write a query to return the number of leads for each lead source?",
+"Answers": {
+"A.": "SELECT LeadSource, COUNT(Name) FROM Lead GROUP BY LeadSource"
+}
+},
+{
+"1:": "What are reasons for using a static method or variable?",
+"Answers": {
+"A.": "To use a method or variable without instantiating its class",
+"B.": "To create a utility method in a class",
+"D.": "To store information that is shared across instances of a class",
+"X-->E.": "To persist a variable value beyond the context of a single transaction"
+}
+},
+{
+"1:": "To fulfill a business requirement, a formula field of a child object has been used in a roll-up summary field of a Master object. Will the roll-up summary field function correctly?",
+"Answers": {
+"B.": "Yes, if the formula field is not referring to another field in a different object",
+"X-->D.": "No, using formula fields in a roll-up summary is not supported."
+}
+},
+{
+"1:": "A company would like to send record information to a legacy system when a criteria is met. A developer can accomplish this requirement by using:",
+"Answers": {
+"B.": "Workflow Rule with Outbound Message"
+}
+},
+{
+"1:": "Given the following options, what are the valid ways to declare a collection variable?",
+"Answers": {
+"A.": "new Map<Id, Account>()",
+"B.": "new List<Account>()",
+"E.": "new Account[]{<elements>}"
+}
+},
+{
+"1:": "How can a developer check if a user has read access to a field and the field can be displayed on a Visualforce page?",
+"Answers": {
+"X-->A.": "Call the IsAccessible() method of Schema.DescribeSObjectResult to verify field level read permission",
+"D.": "Call the isAccessible() method of Schema.DescribeFieldResult to verify field level read permission"
+}
+},
+{
+"1:": "Which of the following statements about defining an Apex Class are true?",
+"Answers": {
+"A.": "The keyword [class] followed by the name of the class is necessary",
+"B.": "An access modifier is required in the declaration of a top-level class",
+"D.": "A developer may add optional extensions and/or implementations."
+}
+},
+{
+"1:": "How can a dynamic SOQL query be created at runtime using input from an end user?",
+"Answers": {
+"D.": "Use the Database.query(string) with a query specified in the string"
+}
+},
+{
+"1:": "T",
+"Answers": {
+"C.": "String str;"
+}
+},
+{
+"1:": "How can a developer access a static variable named TaxRate declared in a different Apex class named TaxCalculation?",
+"Answers": {
+"D.": "TaxCalculation.TaxRate"
+}
+},
+{
+"1:": "W",
+"Answers": {
+"A.": "The innerClass does not inherit the sharing setting of the containerClass.",
+"X-->B.": "The [with/without sharing] keyword should only be defined in outer classes.",
+"C.": "[without sharing] will be the default for the inner class",
+"X-->D.": "The innerClass inherits the sharing setting of the containerClass."
+}
+},
+{
+"1:": "What method can be used to obtain metadata information about all the sObjects in an organization and their fields?",
+"Answers": {
+"C.": "getGlobalDescribe()"
+}
+},
+{
+"1:": "There are a number of standard objects that don't support DML operations. Which of these standard objects are not supported by DML Operations?",
+"Answers": {
+"A.": "Profile",
+"C.": "Record Type"
+}
+},
+{
+"1:": "What is the correct syntax for a Do While procedural loop?",
+"Answers": {
+"D.": "do {statement} while (Boolean_condition);"
+}
+},
+{
+"1:": "A",
+"Answers": {
+"C.": "Boolean isCorrect;"
+}
+},
+{
+"1:": "A developer needs to initialize a numerical value of 17. What data type should the developer use?",
+"Answers": {
+"B.": "Integer"
+}
+},
+{
+"1:": "Steadfast Insurance Inc. has a custom object Claim to track insurance claims for its team members. When a team member creates a claim record, an approval process is started which is used by the insurance manager to approve or reject the claim. In order to assist the manager, a team member's claim limit, which is a custom field on the User object, should be displayed on the claim record. What is the recommended solution to meet the requirement?",
+"Answers": {
+"C.": "Use a cross-object formula to display the user's limit on the claim record"
+}
+},
+{
+"1:": "A developer needs to create a new Contact record in his Apex Trigger. What DML statement should be used in the code?",
+"Answers": {
+"C.": "Insert"
+}
+},
+{
+"1:": "Given the following value from a Lead record, lastModifiedDate:2016-05-06 03:25:41, what data type should the developer use to retrieve this type of information?",
+"Answers": {
+"C.": "DateTime"
+}
+},
+{
+"1:": "Which of the following statements about the IF-ELSE statement are true?",
+"Answers": {
+"A.": "An IF-ELSE statement permits a choice to be made between two possible execution paths.",
+"B.": "An IF statement can be followed by a discretionary ELSE statement, which executes when the Boolean expression is false."
+}
+},
+{
+"1:": "A developer needs to retrieve the Contact records with a last name that starts with \u2018Ab\u2019. What code in the options below will satisfy his requirements?",
+"Answers": {
+"A.": "SELECT\u00a0Id, LastName FROM Contact WHERE LastName LIKE \u2018Ab%\u2019"
+}
+},
+{
+"1:": "Before deleting a record, a complex validation needs to be performed to confirm that the record can be deleted by querying a number of objects. What solution would be most appropriate in this situation?",
+"Answers": {
+"D.": "Apex trigger"
+}
+},
+{
+"1:": "The Salesforce Administrator was given a requirement to display the total cost of products at the time they are added to an opportunity. The product cost is a custom field on the product object and is added as a formula field to the opportunity product object. How would the Salesforce Administrator meet this requirement?",
+"Answers": {
+"X-->A.": "Create a roll-up summary field on the opportunity based on the product cost formula field",
+"C.": "Create a workflow rule that copies the product cost to a currency field and create a roll-up summary field based on the currency field"
+}
+},
+{
+"1:": "A developer is considering writing a trigger to perform data validation before saving a record. What other options can be used to enforce and maintain data quality?",
+"Answers": {
+"A.": "Validation rules",
+"C.": "Required fields",
+"X-->D.": "Escalation rules",
+"E.": "Restricted Picklists"
+}
+},
+{
+"1:": "Which of the following is required when defining an Apex Class Method?",
+"Answers": {
+"A.": "Return Data type"
+}
+},
+{
+"1:": "Universal Insurance uses Salesforce for managing claims. Claim is a custom object. If an email is sent from a claimant regarding an existing claim, it should be checked for a unique reference number and if found, attached to the related claim record, and the status of the claim record updated. What feature would be most appropriate for this requirement?",
+"Answers": {
+"X-->A.": "Email-to-Case",
+"B.": "Custom Email Handler"
+}
+},
+{
+"1:": "Stock Symbol is a custom field on the Account object. What is the best way to make this field appear on Contact detail page layout?",
+"Answers": {
+"B.": "Formula Field"
+}
+},
+{
+"1:": "Which of the following are true about cross-object formula fields?",
+"Answers": {
+"A.": "Cross-object formula fields can pull field values from objects that are up to 10 relationships away.",
+"B.": "Cross-object formula fields can pull field values from master-detail or lookup parent records.",
+"D.": "Cross-object formula fields can pull data from a record even if the user does not have access to it."
+}
+},
+{
+"1:": "Apex is typically executed in system mode, but which of the following executes code as the current user?",
+"Answers": {
+"C.": "Anonymous Code Blocks",
+"X-->D.": "Apex Triggers"
+}
+},
+{
+"1:": "Which of the following tasks are best achieved using Process Builder instead of Workflow Rules?",
+"Answers": {
+"B.": "Submitting an Order for approval",
+"C.": "Copying the Account postal code to all child contacts",
+"X-->D.": "Field update on parent object."
+}
+},
+{
+"1:": "The Stage field on all related Opportunity records should be updated to 'Closed Lost' when the value of a 'Status' custom field on the Account record is changed to 'Inactive' by a sales user. What should be used to meet this requirement?",
+"Answers": {
+"B.": "Process Builder",
+"X-->D.": "Flow Builder"
+}
+},
+{
+"1:": "How can a developer ensure that a variable 'Day' will only contain specific set of constants such as SUNDAY, MONDAY, ...SATURDAY? What should variable 'Day' be declared as?",
+"Answers": {
+"B.": "enum Day {SUNDAY, MONDAY, ...SATURDAY}",
+"X-->D.": "map<Id, String>Day {SUNDAY, MONDAY, ...SATURDAY}"
+}
+},
+{
+"1:": "How can a developer get all picklist values of a specific field via Apex?",
+"Answers": {
+"X-->B.": "Use the describePicklist method",
+"D.": "Use the getPicklistValues method"
+}
+},
+{
+"1:": "In the following line of code, why can the helloWorld() method be called directly instead of instantiating the myClass?",
+"Answers": {
+"B.": "helloWorld is defined as a static method"
+}
+},
+{
+"1:": "Which of the following DML operations will allow other records in a list to be inserted even if there are records that failed?",
+"Answers": {
+"A.": "Database.insert(sObjectsToCreate, false);",
+"X-->D.": "Database.insert(sObjectsToCreate, true);"
+}
+},
+{
+"1:": "Universal Containers would like to see a Red / Yellow / Green Traffic Light representation on the Opportunity detail page, based on the value in the Opportunity Probability field. What would you use to achieve this?",
+"Answers": {
+"A.": "Formula Field"
+}
+},
+{
+"1:": "Which of the following can be used to update existing standard and custom fields on child records automatically when a parent record is modified?",
+"Answers": {
+"B.": "Apex Trigger",
+"C.": "Process Builder"
+}
+},
+{
+"1:": "What should a developer consider when using the upsert operation to insert and update records?",
+"Answers": {
+"B.": "Using the upsert operation, the administrator can either insert or update an existing record in one call.",
+"C.": "To determine whether a record already exists, the upsert statement or Database method uses the ID of the record as the key to match records, a custom external ID field, or a standard field with the idLookup attribute set to true.",
+"E.": "If the key is not matched, a new object record is created. If the key is matched once, the existing object record is updated."
+}
+},
+{
+"1:": "W",
+"Answers": {
+"B.": "16"
+}
+},
+{
+"1:": "Which of the following access modifiers are supported in Apex?",
+"Answers": {
+"B.": "public",
+"C.": "global",
+"D.": "private"
+}
+},
+{
+"1:": "A",
+"Answers": {
+"A.": "Results were evenly distributed among the objects returned."
+}
+},
+{
+"1:": "Which of the following requirements could a developer use a formula field for?",
+"Answers": {
+"B.": "Displaying a traffic light image of red, yellow, or green based on case priority.",
+"C.": "Creating a link to an application outside of Salesforce, passing parameters including the session Id."
+}
+},
+{
+"1:": "Which of the following field types can a Roll-Up Summary field calculate?",
+"Answers": {
+"A.": "Number"
+}
+},
+{
+"1:": "There are several escape sequences that can be used in queries so that a user query can contain special characters. Which of the following are valid escape sequences?",
+"Answers": {
+"A.": "\\'",
+"B.": "\\n",
+"E.": "\\\""
+}
+},
+{
+"1:": "An organization has enabled Multiple Currencies. A developer needs to calculate the total of the Estimated_value__c on CampaignMember object using a roll-up summary field on Campaign object named Total_estimated_value__c. What will be the currency of the Total_estimated_value__c field?",
+"Answers": {
+"X-->B.": "The field values in Estimated_value__c from CampaignMember object are converted into the currency of the current user, and the Total_estimated_value__c is shown using the currency of the current user on the Campaign.",
+"C.": "The field values in Estimated_value__c from CampaignMember object are converted into the currency of the Campaign, and the Total_estimated_value__c is shown using the currency of the Campaign."
+}
+},
+{
+"1:": "Which of the following are valid Apex variables?",
+"Answers": {
+"A.": "String a,b,c;",
+"C.": "Map<ID, String> sampleMap;",
+"E.": "Boolean y;"
+}
+}
+]
